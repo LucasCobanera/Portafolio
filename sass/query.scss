@@ -1,0 +1,277 @@
+@media screen and (max-width: 1024px){
+    main{
+        .trabajos{
+            .contenedor{
+                .contenedor-trabajos{
+                    .trabajo{
+                        .texto{
+                            p{
+                                font-size: 1.2rem;
+                                margin-bottom: 10px;
+                            }
+                            a{
+                                font-size: 1.2rem;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        height: 600px;
+        .contenedor{
+            .contenedor-nombre{
+                margin: 150px auto;
+                h3{
+                    font-size: 3.5rem;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    main{
+        .acerca-de{
+            .contenedor{
+                width: 100%;
+                .foto{
+                    margin-left: 20px;
+                }
+                .presentacion{
+                    margin-right: 20px;
+                    h3{
+                        font-size: 2.5rem;
+                    }
+                    .nombre{
+                        font-size: 1.8rem;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                    }
+                    ul{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .trabajos{
+            .contenedor{
+                h3{
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+                .contenedor-trabajos{
+                    max-width: 600px;
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    overflow-y: scroll;
+                    // white-space: nowrap;
+                    .trabajo{
+                        width: 300px;
+                        height: 150px;
+                        scroll-snap-align: center;
+                        img{
+                            width: 300px;
+                            // height: 250px;
+                        }
+                        .texto{
+                            display: none;
+                            position: relative;
+                            opacity: 0;
+                            height: auto;
+                        }
+                    }.trabajo:hover{
+                        background-color: #00000000;
+                        .img{
+                            opacity: 1;
+                        }
+                        
+                    }
+                    .expandir{
+                            z-index: 2;
+                            height: 400px;
+                            width: 500px;
+                            
+                            .img{
+                                width: 500px;
+                                height: 250px;
+                            }
+                            .texto{
+                                display: flex;
+                                opacity: 1;
+                                p{
+                                    color: #000;
+                                }
+                                a{
+                                    color: #43008b;
+                                }
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .contacto{
+            .contenedor{
+                h3{
+                font-size: 2.5rem;
+                }
+                .correo{
+                    font-size: 1.8rem;
+                    i{
+                        font-size: 2.5rem;
+                    }
+                }
+                .telefono{
+                    font-size: 1.8rem;
+                    font-size: 2.5rem;
+                }
+                .redes{
+                    a{
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        .contenedor{
+            width: 100%;
+            max-width: 100%;
+            .menu-nav{
+                text-align: center;
+                ul{
+                    li{
+                        margin: 0 10px;
+                        a{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .contenedor-nombre{
+                width: 95%;
+                height: auto;
+                margin: 150px 10px;
+                
+                h3{
+                    font-size: 2.2rem;
+                }
+                h1{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        
+    }
+    main{
+        .acerca-de{
+            .contenedor{
+                height: auto;
+                flex-wrap: wrap;
+                .foto{
+                    width: 100%;
+                    margin: 20px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    img{
+                        margin: auto;
+                        width: 120px;
+                        height: 120px;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                    }
+                }
+                .presentacion{
+                    margin: 0 10px;
+                    h3{
+                        font-size: 2.2rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .trabajos{
+            .contenedor{
+                padding: 0px 10px;
+                h3{
+                    text-align: center;
+                    font-size: 2rem;
+                    margin: 0px;
+                    
+                }.contenedor-trabajos{
+                          
+                        .trabajo{
+                            width: 100%;
+                            margin: 20px 20px 20px 0px;
+                            img{
+                                width: 300px
+                            };
+                        }
+                        .mostrar-info{
+                            #img{
+                                opacity: .2;
+                            }
+                            .texto{
+                                width: 300px;
+                                opacity: 1;
+                                display: flex;
+                                position: absolute;
+                                p{
+                                    color: #000;
+                                    font-weight: 400;
+                                }
+                                a{
+                                    color: #000;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    
+                    }
+            }
+        }
+        .contacto{
+            .contenedor{
+                h3{
+                    font-size: 2rem;
+                }
+                .correo{
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+                .telefono{
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+                .redes{
+                    a{
+                        font-size: 2.8rem;
+                    }
+                }
+
+            }
+        }
+    }
+    footer{
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}

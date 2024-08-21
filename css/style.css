@@ -1,0 +1,499 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Saira", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+header {
+  background: url("../img/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+header .contenedor {
+  position: relative;
+  height: 100%;
+}
+header .contenedor .menu-nav {
+  padding-top: 70px;
+  text-align: end;
+  position: relative;
+}
+header .contenedor .menu-nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.5s ease;
+}
+header .contenedor .menu-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+}
+header .contenedor .menu-nav ul li:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.5s ease;
+}
+header .contenedor .contenedor-nombre {
+  position: relative;
+  width: 520px;
+  height: 160px;
+  margin: 200px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+}
+header .contenedor .contenedor-nombre h3 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+header .contenedor .contenedor-nombre h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+main .acerca-de {
+  background: #f9f9f9;
+  padding-bottom: 60px;
+}
+main .acerca-de .contenedor {
+  display: flex;
+  height: 600px;
+  align-items: center;
+}
+main .acerca-de .contenedor .foto {
+  margin-right: 50px;
+  margin-left: 80px;
+}
+main .acerca-de .contenedor .foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  image-rendering: auto;
+}
+main .acerca-de .contenedor .foto p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #5f5f5f;
+  text-align: center;
+  margin-top: 50px;
+}
+main .acerca-de .contenedor .presentacion {
+  width: 650px;
+}
+main .acerca-de .contenedor .presentacion h3 {
+  color: #00174d;
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+main .acerca-de .contenedor .presentacion .nombre {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+main .acerca-de .contenedor .presentacion p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+main .acerca-de .contenedor .presentacion h4 {
+  margin: 15px 0 10px 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .acerca-de .contenedor .presentacion ul {
+  margin-left: 25px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+}
+main .trabajos {
+  background: url("../img/v748-toon-106.jpg");
+  padding: 20px 0;
+}
+main .trabajos .contenedor {
+  width: 100%;
+  max-width: none;
+  padding: 0 50px;
+}
+main .trabajos .contenedor h3 {
+  text-align: left;
+  font-size: 3.2rem;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: #00174d;
+  font-weight: 500;
+}
+main .trabajos .contenedor .contenedor-trabajos {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo {
+  width: 90%;
+  margin: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #5f5f5f;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo .texto {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo .texto p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo .texto a {
+  border: 2px solid #43008b;
+  padding: 10px 50px;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo .texto a:hover {
+  background-color: #43008b;
+  transition: 0.5s ease;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo:hover {
+  background-color: #00174d;
+  transition: 0.5s ease;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo:hover .img {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+main .trabajos .contenedor .contenedor-trabajos .trabajo:hover .texto {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+main .contacto .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .contacto .contenedor h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #00174d;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+main .contacto .contenedor .correo {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+main .contacto .contenedor .correo span {
+  margin-left: 20px;
+}
+main .contacto .contenedor .correo i {
+  font-size: 3rem;
+}
+main .contacto .contenedor .telefono {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+main .contacto .contenedor .telefono span {
+  margin-left: 20px;
+}
+main .contacto .contenedor .telefono i {
+  font-size: 3rem;
+}
+main .contacto .contenedor .redes {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 4rem;
+}
+main .contacto .contenedor .redes a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s ease;
+}
+main .contacto .contenedor .redes a:hover {
+  transition: 0.5s ease;
+  color: #004cff;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+}
+footer p {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  main .trabajos .contenedor .contenedor-trabajos .trabajo .texto p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo .texto a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 600px;
+  }
+  header .contenedor .contenedor-nombre {
+    margin: 150px auto;
+  }
+  header .contenedor .contenedor-nombre h3 {
+    font-size: 3.5rem;
+  }
+  header .contenedor .contenedor-nombre h1 {
+    font-size: 3rem;
+  }
+  main .acerca-de .contenedor {
+    width: 100%;
+  }
+  main .acerca-de .contenedor .foto {
+    margin-left: 20px;
+  }
+  main .acerca-de .contenedor .presentacion {
+    margin-right: 20px;
+  }
+  main .acerca-de .contenedor .presentacion h3 {
+    font-size: 2.5rem;
+  }
+  main .acerca-de .contenedor .presentacion .nombre {
+    font-size: 1.8rem;
+  }
+  main .acerca-de .contenedor .presentacion p {
+    font-size: 1.8rem;
+  }
+  main .acerca-de .contenedor .presentacion ul {
+    font-size: 1.6rem;
+  }
+  main .trabajos .contenedor h3 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  main .trabajos .contenedor .contenedor-trabajos {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-y: scroll;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo {
+    width: 300px;
+    height: 150px;
+    scroll-snap-align: center;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo img {
+    width: 300px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo .texto {
+    display: none;
+    position: relative;
+    opacity: 0;
+    height: auto;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo:hover .img {
+    opacity: 1;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .expandir {
+    z-index: 2;
+    height: 400px;
+    width: 500px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .expandir .img {
+    width: 500px;
+    height: 250px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .expandir .texto {
+    display: flex;
+    opacity: 1;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .expandir .texto p {
+    color: #000;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .expandir .texto a {
+    color: #43008b;
+  }
+  main .contacto .contenedor h3 {
+    font-size: 2.5rem;
+  }
+  main .contacto .contenedor .correo {
+    font-size: 1.8rem;
+  }
+  main .contacto .contenedor .correo i {
+    font-size: 2.5rem;
+  }
+  main .contacto .contenedor .telefono {
+    font-size: 1.8rem;
+    font-size: 2.5rem;
+  }
+  main .contacto .contenedor .redes a {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .contenedor {
+    width: 100%;
+    max-width: 100%;
+  }
+  header .contenedor .menu-nav {
+    text-align: center;
+  }
+  header .contenedor .menu-nav ul li {
+    margin: 0 10px;
+  }
+  header .contenedor .menu-nav ul li a {
+    font-size: 1.4rem;
+  }
+  header .contenedor .contenedor-nombre {
+    width: 95%;
+    height: auto;
+    margin: 150px 10px;
+  }
+  header .contenedor .contenedor-nombre h3 {
+    font-size: 2.2rem;
+  }
+  header .contenedor .contenedor-nombre h1 {
+    font-size: 1.8rem;
+  }
+  main .acerca-de .contenedor {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  main .acerca-de .contenedor .foto {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .acerca-de .contenedor .foto img {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+  }
+  main .acerca-de .contenedor .foto p {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  main .acerca-de .contenedor .presentacion {
+    margin: 0 10px;
+  }
+  main .acerca-de .contenedor .presentacion h3 {
+    font-size: 2.2rem;
+  }
+  main .acerca-de .contenedor .presentacion p {
+    font-size: 1.4rem;
+  }
+  main .trabajos .contenedor {
+    padding: 0px 10px;
+  }
+  main .trabajos .contenedor h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo {
+    width: 100%;
+    margin: 20px 20px 20px 0px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .trabajo img {
+    width: 300px;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .mostrar-info #img {
+    opacity: 0.2;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .mostrar-info .texto {
+    width: 300px;
+    opacity: 1;
+    display: flex;
+    position: absolute;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .mostrar-info .texto p {
+    color: #000;
+    font-weight: 400;
+  }
+  main .trabajos .contenedor .contenedor-trabajos .mostrar-info .texto a {
+    color: #000;
+    font-weight: 600;
+  }
+  main .contacto .contenedor h3 {
+    font-size: 2rem;
+  }
+  main .contacto .contenedor .correo {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  main .contacto .contenedor .telefono {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  main .contacto .contenedor .redes a {
+    font-size: 2.8rem;
+  }
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
